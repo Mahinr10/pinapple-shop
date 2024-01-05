@@ -3,10 +3,7 @@ package com.example.pineappleinventory.FakeDatabase;
 import com.example.pineappleinventory.Entity.PineappleBatch;
 import org.springframework.stereotype.Service;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 @Service
 public class FakeDBServiceImpl implements FakeDBService {
@@ -22,6 +19,7 @@ public class FakeDBServiceImpl implements FakeDBService {
         if(fakeDB.containsKey(pineappleBatch.getId())) {
             return null;
         }
+        pineappleBatch.setCreatedDate(new Date());
         fakeDB.put(pineappleBatch.getId(), pineappleBatch);
         return fakeDB.getOrDefault(pineappleBatch.getId(), null);
     }

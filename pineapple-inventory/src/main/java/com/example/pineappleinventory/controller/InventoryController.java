@@ -23,6 +23,6 @@ public class InventoryController {
 
     @GetMapping("/get-all")
     public ResponseEntity<List<PineappleBatch>> findAll() {
-        return new ResponseEntity<>(fakeDBService.getAllBatch(), HttpStatus.FOUND);
+        return new ResponseEntity<>(fakeDBService.getAllBatch(), HttpStatus.ACCEPTED);
     }
 }
