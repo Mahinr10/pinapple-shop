@@ -1,0 +1,23 @@
+syntax = "proto3";
+
+option java_multiple_files = true;
+option java_package = "org.example.grpc";
+option java_outer_classname = "InventoryProto";
+
+package Inventory;
+
+message InventoryRequest {
+    string id = 1;
+}
+
+message InventoryResponse {
+    string id = 1;
+    string name = 2;
+    string location = 3;
+    string email = 4;
+    string phone = 5;
+}
+
+service InventoryService {
+    rpc Inventory(InventoryRequest) returns (InventoryResponse);
+}

@@ -2,7 +2,6 @@ package com.example.pineappleinventory.controller;
 
 import com.example.pineappleinventory.FakeDatabase.FakeDBService;
 import com.example.pineappleinventory.FakeDatabase.PineappleBatch;
-import org.example.Apple;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -17,8 +16,6 @@ import java.util.List;
 @RestController
 @RequestMapping("/api/inventory")
 public class InventoryController {
-
-    Apple apple;
 
     @Autowired
     FakeDBService fakeDBService;
