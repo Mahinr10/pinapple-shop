@@ -1,12 +1,16 @@
 package com.example.pineappleinventory.FakeDatabase;
 
-import com.example.pineappleinventory.Entity.PineappleBatch;
 import org.springframework.stereotype.Service;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Date;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 
 @Service
 public class FakeDBServiceImpl implements FakeDBService {
+
     Map<String, PineappleBatch> fakeDB;
 
     public FakeDBServiceImpl() {

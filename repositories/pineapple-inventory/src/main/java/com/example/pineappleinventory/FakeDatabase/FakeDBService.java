@@ -1,7 +1,5 @@
 package com.example.pineappleinventory.FakeDatabase;
 
-import com.example.pineappleinventory.Entity.PineappleBatch;
-
 import java.util.List;
 
 public interface FakeDBService {

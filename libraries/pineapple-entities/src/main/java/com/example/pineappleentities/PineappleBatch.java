@@ -1,4 +1,4 @@
-package com.example.pineappleinventory.Entity;
+package com.example.pineappleentities;
 
 import java.util.Date;
 
